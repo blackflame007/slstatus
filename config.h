@@ -65,6 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+	{ run_command, "BTC  %s | ", "curl https://api.coinbase.com/v2/prices/spot?currency=USD | jq -r '.data.amount'"},
 	{ netspeed_rx, "%sB/s ", "wlp4s0"    },
 	{ netspeed_tx, "%sB/s ", "wlp4s0"    },
 //	{ run_command, "墳%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"},
